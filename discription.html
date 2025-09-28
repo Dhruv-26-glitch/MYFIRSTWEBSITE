@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Description - Janardhan Shoes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .shoe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .shoe {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .shoe:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .shoe img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .shoe h3 {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .shoe p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .order-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #6c63ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .order-btn:hover {
+      background: #5548d3;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Our Shoes Collection</h2>
+    <div class="shoe-grid">
+
+      <div class="shoe">
+        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_3.0/h_300,c_limit/8d73cd25-91cc-48fe-9514-7a41daccb7ef/vomero-plus-road-running-shoes-sBieAqOJ.png" alt="Runner X1">
+        <h3>Runner X1</h3>
+        <p>Lightweight running shoes designed for maximum comfort and durability. Perfect for athletes and fitness lovers.</p>
+        <p><strong>Price:</strong> ₹3,999</p>
+        <a href="form.htm" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="shoe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBK1WzBAH4LFKWEEYITi1sODvye65PAAN_w&s" alt="Urban Classic">
+        <h3>Urban Classic</h3>
+        <p>Trendy sneakers that match both casual and party outfits. Stylish, versatile, and comfortable for all-day wear.</p>
+        <p><strong>Price:</strong> ₹4,499</p>
+        <a href="form.htm" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="shoe">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." alt="Elite Leather">
+        <h3>Elite Leather</h3>
+        <p>Premium handcrafted leather shoes for formal occasions. Elegant design with unmatched durability and class.</p>
+        <p><strong>Price:</strong> ₹5,999</p>
+        <a href="form.htm" class="order-btn">Order Now</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
